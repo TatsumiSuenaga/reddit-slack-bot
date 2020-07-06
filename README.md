@@ -7,7 +7,7 @@ This project is under construction and largely based off of a [Medium tutorial](
 
 1. Install and set up `serverless` in your local environment with `npm i -g serverless`.
 2. [Create a slack app/bot for your workspace](https://api.slack.com/apps?new_app=1)
-3. Next locate your bot's webhook and then create a AWS SSM secure string parameter called `SLACK_WEB_HOOK_URL` on (AWS System Manager)[https://console.aws.amazon.com/systems-manager] under **Parameter Store**
+3. Next locate your bot's webhook and then create a AWS SSM secure string parameter called `SLACK_WEB_HOOK_URL` on [AWS System Manager](https://console.aws.amazon.com/systems-manager) under **Parameter Store**
 4. Configure your AWS credentials with the app and deploy
 ```
 serverless login
