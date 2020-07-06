@@ -4,6 +4,8 @@
   "description": "### Description This project is under construction and largely based off of a [Medium tutorial](https://medium.com/northcoders/make-a-web-scraper-with-aws-lambda-and-the-serverless-framework-807d0f536d5f).",
   "main": "handler.js",
   "scripts": {
+    "dev:getCelestePosts": "serverless invoke local --function getCelestePosts",
+    "deploy": "serverless deploy -v",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
