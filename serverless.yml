@@ -1,8 +1,13 @@
-service: no-fee-ac-job
+org: tatsumisuenaga
+app: reddit-slack-bot
+
+service: no-fee-ac-posts
 
 provider:
   name: aws
   runtime: nodejs12.x
+  environment:
+    SLACK_WEB_HOOK_URL: ${ssm:SLACK_WEB_HOOK_URL~true}
 
 functions:
   getCelestePosts:

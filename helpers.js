@@ -15,13 +15,13 @@ const extractPosts = (results) => {
         subreddit: post.subreddit_name_prefixed,
         selftext: post.selftext ? post.selftext : 'No description found!'
       });
-      return acc;
     }
+    return acc;
   }, []);
 };
 
-const searchForPosts = (subreddit, keyword, limit)  => {
-  axios.get(`https://www.reddit.com/r/${subreddit}/search.json?q=${keyword}&limit=${limit}&sort=new&restrict_sr=1`);
+const searchForPosts = async (subreddit, keyword, limit) => {
+  return await axios.get(`https://www.reddit.com/r/${subreddit}/search.json?q=${keyword}&limit=${limit}&sort=new&restrict_sr=1`);
 };
 
 const formatSlackMessage = (posts, messageTitle) => {
