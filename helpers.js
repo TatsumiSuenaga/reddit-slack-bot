@@ -1,4 +1,4 @@
-const axios = require('axios');
+const axios = require("axios");
 
 const extractPosts = (results) => {
   const posts = results.data.children;
@@ -20,8 +20,8 @@ const extractPosts = (results) => {
   }, []);
 };
 
-const searchForPosts = async (subreddit, keyword, limit)  => {
-  await axios.get(`https://www.reddit.com/r/${subreddit}/search.json?q=${keyword}&limit=${limit}&sort=new&restrict_sr=1`);
+const searchForPosts = (subreddit, keyword, limit)  => {
+  axios.get(`https://www.reddit.com/r/${subreddit}/search.json?q=${keyword}&limit=${limit}&sort=new&restrict_sr=1`);
 };
 
 const formatSlackMessage = (posts, messageTitle) => {

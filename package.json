@@ -1,0 +1,23 @@
+{
+  "name": "reddit-slack-bot",
+  "version": "1.0.0",
+  "description": "### Description This project is under construction and largely based off of a [Medium tutorial](https://medium.com/northcoders/make-a-web-scraper-with-aws-lambda-and-the-serverless-framework-807d0f536d5f).",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TatsumiSuenaga/reddit-slack-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TatsumiSuenaga/reddit-slack-bot/issues"
+  },
+  "homepage": "https://github.com/TatsumiSuenaga/reddit-slack-bot#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
