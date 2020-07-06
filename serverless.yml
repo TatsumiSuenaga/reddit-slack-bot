@@ -1,0 +1,9 @@
+service: no-fee-ac-job
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  getCelestePosts:
+    handler: handler.getCelestePosts
